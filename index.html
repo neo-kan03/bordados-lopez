@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html class="light scroll-smooth" lang="es">
+<html class="light scroll-smooth" lang="es-ES">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Bordados López - Expertos en Personalización Textil</title>
+    <title>Bordados Murcia y Llano de Brujas | Bordados López</title>
+    <meta name="description"
+        content="Servicios de bordado en Murcia Spain y Llano de Brujas. Especialistas en bordado personalizado y personalización de vestuario laboral. C. San Pedro." />
+    <meta name="keywords"
+        content="bordados murcia, bordados llano de brujas, vestuario laboral llano de brujas, servicios de bordado en murcia spain, bordados lopez, bordado industrial, ropa laboral" />
+    <meta name="author" content="Bordados López" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="Bordados López - Expertos en Bordados en Murcia y Vestuario Laboral" />
+    <meta property="og:description"
+        content="Taller experto en bordados en Llano de Brujas, Murcia. Personalización de vestuario laboral, parches y personalizados." />
+    <meta property="og:url" content="https://bordadoslopez.es" />
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1rgy_Q2ldCfTpufbtHrYowc8ity81eblPP1g7vVz9UgDEJCACTC-rZtBpcKKAVxiw2Icz834iYb1uhw1AGbN3gttADJrjxejo6kCl0uFFGPPsLt9gYKsClP3ERfw4aw1VJlT_KS2Qgbwc-h5T47BjEyokRNcd2aVj0s0GxvhC_gfhdxfe4MSs72qtCzUhB8NqI3BjAkjQryr3F3IzRF7HtMxvWbZ-vLzcSTRQLb3o_v9t2NDOWQoiOPImr-7bB6vr4MhD7DeTw8i" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Schema JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Bordados López",
+      "alternateName": "Bordados La Bruja",
+      "description": "Servicios de bordado en Murcia Spain, especializados en bordado personalizado y vestuario laboral en Llano de Brujas.",
+      "keywords": "bordados murcia, bordados llano de brujas, vestuario laboral, bordado, parches",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDa9FIqMHbQAYhI4Y3IuDjWRD7CyhRUTUFMhzV1eXX2LEGR6y5daUT4OMKLIAqupuN-tPuv3KstBtSHzitaQjryzWQU_ZZ4q8ICmtAZrPBgW9Ev8ZoEzexzMwpWxOnGDRGjimiyZcPuU1aPspT3htUxHQ9yNQTwY4oK8OWolPgOjmGgOu73XgsRljtlY2ARSAlLmiJVsXuzg-ti7wJ5hcw1Puig6lVkLEvtjP6JgVsaCg_Yygr_V57TIOlPRIyLVAUwpsehBoYVjqVR",
+      "@id": "https://bordadoslopez.es",
+      "url": "https://bordadoslopez.es",
+      "telephone": "+34968300472",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C. San Pedro, 10, Bajo",
+        "addressLocality": "Llano de Brujas",
+        "addressRegion": "Murcia",
+        "postalCode": "30161",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.0003,
+        "longitude": -1.0664
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      }
+    }
+    </script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -13,6 +71,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script>
         tailwind.config = {
@@ -36,6 +95,14 @@
         };
     </script>
     <style>
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
+        }
+
         .hero-img-mask {
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
         }
@@ -49,17 +116,17 @@
 </head>
 
 <body
-    class="bg-background-light dark:bg-background-dark text-primary dark:text-gray-200 font-display transition-colors duration-300">
+    class="bg-background-light dark:bg-background-dark text-primary dark:text-gray-200 font-display transition-colors duration-300 overflow-x-hidden w-full">
     <nav
         class="fixed w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <a class="material-symbols-outlined text-3xl text-primary dark:text-white" href="#">grid_view</a>
+                <a href="#"><img src="img/logo.png" alt="Logo Bordados López" class="h-10 w-auto object-contain" /></a>
                 <a class="text-xl font-semibold tracking-tight uppercase" href="#">Bordados López</a>
             </div>
             <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest">
                 <a class="hover:text-gray-500 transition-colors" href="#servicios">Servicios</a>
-                <a class="hover:text-gray-500 transition-colors" href="#portfolio">Porfolio</a>
+                <a class="hover:text-gray-500 transition-colors" href="#trabajos">Trabajos</a>
                 <a class="hover:text-gray-500 transition-colors" href="#contacto">Contacto</a>
                 <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                     onclick="document.documentElement.classList.toggle('dark')">
@@ -67,21 +134,46 @@
                     <span class="material-symbols-outlined text-xl hidden dark:block">light_mode</span>
                 </button>
             </div>
-            <button class="md:hidden">
-                <span class="material-symbols-outlined">menu</span>
+            <button id="mobile-menu-btn" class="md:hidden relative z-50 p-2">
+                <span id="menu-icon"
+                    class="material-symbols-outlined transition-transform duration-500 text-primary dark:text-white">menu</span>
             </button>
         </div>
     </nav>
+
+    <!-- Menu Liquid Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-primary/95 dark:bg-background-dark/95 backdrop-blur-xl text-white flex flex-col justify-center items-center transition-all duration-700 ease-in-out pointer-events-none opacity-0"
+        style="clip-path: circle(0% at calc(100% - 2.5rem) 2.5rem);">
+        <div
+            class="flex flex-col items-center space-y-8 text-2xl md:text-3xl font-light uppercase tracking-widest text-center px-4">
+            <a class="mobile-link hover:text-gray-400 transition-colors" href="#servicios">Servicios</a>
+            <a class="mobile-link hover:text-gray-400 transition-colors" href="#trabajos">Trabajos</a>
+            <a class="mobile-link hover:text-gray-400 transition-colors" href="#contacto">Contacto</a>
+            <button
+                class="mobile-link mt-8 p-4 rounded-full border border-white/20 hover:bg-white/10 transition-colors flex items-center gap-2"
+                onclick="document.documentElement.classList.toggle('dark')">
+                <span class="material-symbols-outlined text-lg">dark_mode</span> <span class="text-xs">Modo Noche</span>
+            </button>
+        </div>
+    </div>
+
     <header class="relative min-h-screen flex items-center overflow-hidden">
         <div class="grid lg:grid-cols-2 w-full pt-20">
-            <div class="flex flex-col justify-center px-8 lg:px-24 py-20">
+            <div class="flex flex-col justify-center px-8 lg:px-24 py-20" data-aos="fade-right"
+                data-aos-duration="1000">
+                <span
+                    class="text-primary/60 dark:text-gray-400 text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Bordados
+                    Murcia · Llano de Brujas</span>
                 <h1 class="text-5xl lg:text-7xl font-light leading-tight mb-8 tracking-tighter">
-                    DESCUBRE<br />
-                    NUESTROS<br />
-                    SERVICIOS
+                    SERVICIOS DE<br />
+                    BORDADO EN<br />
+                    MURCIA
                 </h1>
                 <p class="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-md font-light">
-                    Expertos en Bordados y Personalización Textil de alta calidad para empresas y particulares.
+                    Transformamos y damos un toque premium a tu <strong
+                        class="font-semibold text-primary dark:text-white">vestuario laboral</strong> y prendas con
+                    nuestros servicios exclusivos de bordado de alta calidad.
                 </p>
                 <div>
                     <a class="inline-block bg-primary text-white px-12 py-4 text-sm uppercase tracking-widest hover:opacity-90 transition-opacity"
@@ -90,7 +182,8 @@
                     </a>
                 </div>
             </div>
-            <div class="relative h-[50vh] lg:h-screen w-full">
+            <div class="relative h-[50vh] lg:h-screen w-full" data-aos="fade-left" data-aos-duration="1000"
+                data-aos-delay="200">
                 <img alt="Máquina de bordado trabajando sobre tela azul"
                     class="w-full h-full object-cover hero-img-mask"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1rgy_Q2ldCfTpufbtHrYowc8ity81eblPP1g7vVz9UgDEJCACTC-rZtBpcKKAVxiw2Icz834iYb1uhw1AGbN3gttADJrjxejo6kCl0uFFGPPsLt9gYKsClP3ERfw4aw1VJlT_KS2Qgbwc-h5T47BjEyokRNcd2aVj0s0GxvhC_gfhdxfe4MSs72qtCzUhB8NqI3BjAkjQryr3F3IzRF7HtMxvWbZ-vLzcSTRQLb3o_v9t2NDOWQoiOPImr-7bB6vr4MhD7DeTw8i" />
@@ -100,102 +193,143 @@
     </header>
     <section class="py-24 bg-gray-50 dark:bg-gray-900/30" id="servicios">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-light mb-16 tracking-tight">Servicios</h2>
+            <h2 class="text-4xl font-light mb-16 tracking-tight" data-aos="fade-up">Servicios</h2>
             <div class="space-y-8">
-                <div
+                <div data-aos="fade-up"
                     class="bg-background-light dark:bg-gray-900 border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row group overflow-hidden">
                     <div class="md:w-1/2 h-64 md:h-80 overflow-hidden">
-                        <img alt="Mujer trabajando en máquina de coser industrial"
+                        <img alt="Mujer trabajando en máquina bordadora"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa9FIqMHbQAYhI4Y3IuDjWRD7CyhRUTUFMhzV1eXX2LEGR6y5daUT4OMKLIAqupuN-tPuv3KstBtSHzitaQjryzWQU_ZZ4q8ICmtAZrPBgW9Ev8ZoEzexzMwpWxOnGDRGjimiyZcPuU1aPspT3htUxHQ9yNQTwY4oK8OWolPgOjmGgOu73XgsRljtlY2ARSAlLmiJVsXuzg-ti7wJ5hcw1Puig6lVkLEvtjP6JgVsaCg_Yygr_V57TIOlPRIyLVAUwpsehBoYVjqVR" />
                     </div>
                     <div class="md:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
-                        <h3 class="text-2xl lg:text-3xl font-light mb-4 tracking-tight">Bordado Personalizado</h3>
-                        <p class="text-xl text-gray-500 dark:text-gray-400 mb-8 font-light">Desde 50 €</p>
-                        <div>
-                            <button
-                                class="bg-primary text-white px-8 py-3 text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">
-                                Reservar ahora
-                            </button>
+                        <h3 class="text-2xl lg:text-3xl font-light mb-4 tracking-tight">Ropa de Trabajo y Empresas</h3>
+                        <p class="text-gray-500 mb-6 font-light">Bordado industrial para uniformes y prendas
+                            corporativas.</p>
+                        <div class="mt-4">
+                            <a href="#contacto"
+                                class="inline-block bg-primary text-white px-8 py-3 text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">
+                                Contactar
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up"
                     class="bg-background-light dark:bg-gray-900 border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row-reverse group overflow-hidden">
                     <div class="md:w-1/2 h-64 md:h-80 overflow-hidden">
-                        <img alt="Hombre preparando serigrafía textil"
+                        <img alt="Bordado en prenda"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtvBn2zvtWT0aEc7E5udulf2kGT4zXMB30zKfIeJjqaxZJqWeiIEgoDiV9Vv8bNnBoTzLhc7dCWScmGDU4CuOPwbt3zyKR1gZvBlbtVj77M2Q6yU31OfoCrJOQI8WGOzJzyrxoj9dvsFgOyshxasUOBwXiBN2le8xGF2xlq-1FIE6aCRFrL8mHZEG8rKRTmvJCJLQdrQJHlxzRo59JgRTgbfXMDJxfRTZfBOBWUJLifuie9qC1BYe7h6K3urJaiYF26tyXJlRXrQmW" />
                     </div>
                     <div class="md:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
-                        <h3 class="text-2xl lg:text-3xl font-light mb-4 tracking-tight">Serigrafía Textil</h3>
-                        <p class="text-xl text-gray-500 dark:text-gray-400 mb-8 font-light">Desde 70 €</p>
-                        <div>
-                            <button
-                                class="bg-primary text-white px-8 py-3 text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">
-                                Reservar ahora
-                            </button>
+                        <h3 class="text-2xl lg:text-3xl font-light mb-4 tracking-tight">Particulares y Colectivos</h3>
+                        <p class="text-gray-500 mb-6 font-light">Parches, ropa deportiva, regalos y personalización
+                            individual.</p>
+                        <div class="mt-4">
+                            <a href="#contacto"
+                                class="inline-block bg-primary text-white px-8 py-3 text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">
+                                Contactar
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-24 bg-background-light dark:bg-background-dark" id="portfolio">
+    <section class="py-24 bg-background-light dark:bg-background-dark" id="trabajos">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-2xl mb-16">
-                <h2 class="text-5xl lg:text-7xl font-light mb-10 tracking-tighter">Mi portafolio</h2>
+            <div class="max-w-2xl mb-16" data-aos="fade-up">
+                <h2 class="text-5xl lg:text-7xl font-light mb-10 tracking-tighter">Nuestros Trabajos</h2>
                 <p class="text-lg text-gray-600 dark:text-gray-400 font-light leading-relaxed">
-                    Bienvenido a mi portafolio. Aquí encontrarás una selección de mis trabajos. Explora mis proyectos
-                    para saber más sobre lo que hago.
+                    Echa un vistazo a algunos de nuestros últimos encargos. Desde uniformes corporativos hasta parches
+                    personalizados, garantizamos el mejor acabado en cada detalle.
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Editorial design"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXQElJpoU-w6P2LL-TMjF243qGbuPCw1N0HCaVBMareqfOVg4jR7QZWdh042mwefdWGngxmwqOBb3y0MZncbsuXeurVmqYwTLdTZubSMz30F2JzCCalG3qTGqQVVw7tyXaQ1jMENSI2Cslnr9ng_s8Opwct_MLkQY2dXMZDcUyI-DGtMbN23KNX7oc0u646cjWpMp778spZXF6W4cxQY3H__L0MUDSKPxrwbmN41Q_BRae41beSeRYyDcEyzJAtIeZyDI9Mytxq_bW" />
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 auto-rows-[300px] md:auto-rows-[320px] lg:auto-rows-[380px]">
+
+                <!-- Bento Block 1: Large Left (Cols 1-2, Rows 1-2) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-2 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-right" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 1"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXQElJpoU-w6P2LL-TMjF243qGbuPCw1N0HCaVBMareqfOVg4jR7QZWdh042mwefdWGngxmwqOBb3y0MZncbsuXeurVmqYwTLdTZubSMz30F2JzCCalG3qTGqQVVw7tyXaQ1jMENSI2Cslnr9ng_s8Opwct_MLkQY2dXMZDcUyI-DGtMbN23KNX7oc0u646cjWpMp778spZXF6W4cxQY3H__L0MUDSKPxrwbmN41Q_BRae41beSeRYyDcEyzJAtIeZyDI9Mytxq_bW" />
+                    <div class="absolute inset-0 flex items-end p-8 md:p-12 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-2xl md:text-4xl font-light">Vestuario Laboral</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Textile work"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbC_Qhr6InXnInJvsu0s_UfLpeuVHOE-RzUcBF0dumvuMu8RCjO3c-im2zQiZ1rFZbnJOX98xIqQq33HHk2REM-WJrbrx8upQX-5vc1cxnoy6FW0cB2_Er6eyZn3_MJc_6Mr6fQlgCVb4h3pDUF4MzVNPU-AIhrbfYuMWDlgoQx4YzL4ZnSJcR4o4YnpYrWbCye0n1eyzRdeVH9EQknl6lSUIelBN25uAniCynD4u-r4vpHHYyiN6hQW8SX8t1GwZoORhPF9zMfTL0" />
+
+                <!-- Bento Block 2: Small Square (Top Right) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-1 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-down-left" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 2"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbC_Qhr6InXnInJvsu0s_UfLpeuVHOE-RzUcBF0dumvuMu8RCjO3c-im2zQiZ1rFZbnJOX98xIqQq33HHk2REM-WJrbrx8upQX-5vc1cxnoy6FW0cB2_Er6eyZn3_MJc_6Mr6fQlgCVb4h3pDUF4MzVNPU-AIhrbfYuMWDlgoQx4YzL4ZnSJcR4o4YnpYrWbCye0n1eyzRdeVH9EQknl6lSUIelBN25uAniCynD4u-r4vpHHYyiN6hQW8SX8t1GwZoORhPF9zMfTL0" />
+                    <div class="absolute inset-0 flex items-end p-6 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-xl font-light">Parches & Emblemas</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Fashion detail"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgOJR0IsOHMZrjWk2UnRoG8dArNBsrdmEXpZHzu12okipz1IMI3Ye9vmRRQ3sDY5wUmbujBHGDVlHJ5kkFDhetIbGMqsE6DHDAWKtotwxGySntFTthrNsA2avpu5wf2322I6MjKQJXEJs2uOuKb29ewfilwoZ1bxgWo4KyFQ7zjUsYNFwnLmhWtK2kkrpKVRrubO3mvkSKFKnVoQK34qQLh3Rn0WPfcmZSMb1C9Jj3TpvpVOFIEnp7ORY00UtCqIGoVFloJk13Uw4" />
+
+                <!-- Bento Block 3: Small Square (Bottom Right) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-3 md:col-span-1 md:row-start-2 md:row-span-1 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-up-left" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 3"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgOJR0IsOHMZrjWk2UnRoG8dArNBsrdmEXpZHzu12okipz1IMI3Ye9vmRRQ3sDY5wUmbujBHGDVlHJ5kkFDhetIbGMqsE6DHDAWKtotwxGySntFTthrNsA2avpu5wf2322I6MjKQJXEJs2uOuKb29ewfilwoZ1bxgWo4KyFQ7zjUsYNFwnLmhWtK2kkrpKVRrubO3mvkSKFKnVoQK34qQLh3Rn0WPfcmZSMb1C9Jj3TpvpVOFIEnp7ORY00UtCqIGoVFloJk13Uw4" />
+                    <div class="absolute inset-0 flex items-end p-6 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-xl font-light">Ediciones Limitadas</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Clothing line"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhzJLIS6RF1LnVckZMHd1tmrgQIhqp-MjuuOwaSz3X6puGCSd5za5OUVssdWVlsZ1o-z2f_CXtCJFwtiKdz_Dd-LZwHzYNGTXH33f8Beslc9XsNxL0qNKJBWsbLNygTxyjLVXckYlOqNo01QKaZejmTydhFRQp-V-3vZwrs1QyaKdJlV4AsfVpCSNqLadg3MpLr_kJ-tz6JNts3GhAx6O5FIyV7SWCLkRvCqyF5MIKF3ocg46Xxqx63xvKX1ay84T4yIVQPqNpIvm5" />
+
+                <!-- Bento Block 4: Small Square (Top Left) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-1 md:col-span-1 md:row-start-3 md:row-span-1 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-right" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 4"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhzJLIS6RF1LnVckZMHd1tmrgQIhqp-MjuuOwaSz3X6puGCSd5za5OUVssdWVlsZ1o-z2f_CXtCJFwtiKdz_Dd-LZwHzYNGTXH33f8Beslc9XsNxL0qNKJBWsbLNygTxyjLVXckYlOqNo01QKaZejmTydhFRQp-V-3vZwrs1QyaKdJlV4AsfVpCSNqLadg3MpLr_kJ-tz6JNts3GhAx6O5FIyV7SWCLkRvCqyF5MIKF3ocg46Xxqx63xvKX1ay84T4yIVQPqNpIvm5" />
+                    <div class="absolute inset-0 flex items-end p-6 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-xl font-light">Gorras Bordadas</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Details"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYb1AadFW_Rqv-TT17Ac2zGw9Zv_LR3vD5KmG1uv78c1a6ZmcKjhsnAUnG_FcY03mw6gOJwuH9TWofB1ymODDDFCcRlDgO84ZOIcfJrcNoBrFIyD91fSi33X2TgP5RABVK7k-jlBusUg_2LZiZwCbHOCJgfB-Vm4ABtaK8W6nkXTfSZgEVRcFVnKOj56On-_WYxvYogWnWj-nT5PkyUo6vB5m7tppvNUjRolsE5NfvHVDUlN9l879XdGGuC3wWSd4PdScSgHjfKDux" />
+
+                <!-- Bento Block 5: Small Square (Bottom Left) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-1 md:col-span-1 md:row-start-4 md:row-span-1 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-up-right" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 5"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYb1AadFW_Rqv-TT17Ac2zGw9Zv_LR3vD5KmG1uv78c1a6ZmcKjhsnAUnG_FcY03mw6gOJwuH9TWofB1ymODDDFCcRlDgO84ZOIcfJrcNoBrFIyD91fSi33X2TgP5RABVK7k-jlBusUg_2LZiZwCbHOCJgfB-Vm4ABtaK8W6nkXTfSZgEVRcFVnKOj56On-_WYxvYogWnWj-nT5PkyUo6vB5m7tppvNUjRolsE5NfvHVDUlN9l879XdGGuC3wWSd4PdScSgHjfKDux" />
+                    <div class="absolute inset-0 flex items-end p-6 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-xl font-light">Bordado de Polos</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 dark:bg-gray-800">
-                        <img alt="Portfolio item - Experience"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzwVzoqMd24RByJT0a55YSU8-Ya8IikYwyVg-Ix5SJKirVoVaJSylUQkm_za6MFPsxxFafofu0gDcN2V8FJ0haWmQyz8CuuS6eWOtsqz6gwPk9q4yxZ8mxUuqyrJpAsiL_WzhnzH0XOfo6vqdmeogPt3lvZ5lQBMYcoOdB21uLkyT6vGJ7T8ESCTH8jrHyLXy2OkR3g9Y9jjRRazFuNeMvX-Uz9hCgvfoYgWcIBqLT98mhp2yyCUaXSFYefuxp9TZQgitDfhbGtpgz" />
+
+                <!-- Bento Block 6: Large Right (Cols 2-3, Rows 3-4) -->
+                <div class="group cursor-pointer rounded-[2rem] md:col-start-2 md:col-span-2 md:row-start-3 md:row-span-2 overflow-hidden relative shadow-sm border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"
+                    data-aos="fade-left" data-aos-delay="200">
+                    <img alt="Ejemplo de Trabajo 6"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzwVzoqMd24RByJT0a55YSU8-Ya8IikYwyVg-Ix5SJKirVoVaJSylUQkm_za6MFPsxxFafofu0gDcN2V8FJ0haWmQyz8CuuS6eWOtsqz6gwPk9q4yxZ8mxUuqyrJpAsiL_WzhnzH0XOfo6vqdmeogPt3lvZ5lQBMYcoOdB21uLkyT6vGJ7T8ESCTH8jrHyLXy2OkR3g9Y9jjRRazFuNeMvX-Uz9hCgvfoYgWcIBqLT98mhp2yyCUaXSFYefuxp9TZQgitDfhbGtpgz" />
+                    <div class="absolute inset-0 flex items-end p-8 md:p-12 pointer-events-none">
+                        <div class="transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <h3 class="text-white drop-shadow-md text-2xl md:text-4xl font-light">Ropa Deportiva</h3>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <footer
         class="pt-32 pb-12 bg-background-light dark:bg-background-dark border-t border-gray-100 dark:border-gray-800"
         id="contacto">
@@ -204,9 +338,18 @@
                 <div>
                     <h4 class="text-xs uppercase tracking-widest font-bold mb-6">Contacto</h4>
                     <ul class="space-y-4 text-sm text-gray-600 dark:text-gray-400 font-light">
-                        <li>info@sitio.com</li>
-                        <li>52-1-33-12345678</li>
-                        <li class="flex gap-4 pt-4">
+                        <li><a href="mailto:info@bordadoslopez.es"
+                                class="hover:text-primary transition-colors flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-[1rem]">mail</span> info@bordadoslopez.es</a>
+                        </li>
+                        <li><a href="tel:+34968300472"
+                                class="hover:text-primary transition-colors flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-[1rem]">call</span> Llamar: 968 300 472</a>
+                        </li>
+                        <li><a href="https://wa.me/34630975350" target="_blank"
+                                class="hover:text-primary transition-colors flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-[1rem]">chat</span> Chat por WhatsApp</a></li>
+                        <li class="flex gap-4 pt-2">
                             <a class="hover:text-primary transition-colors" href="#"><span
                                     class="material-symbols-outlined text-xl">facebook</span></a>
                             <a class="hover:text-primary transition-colors" href="#"><span
@@ -220,9 +363,21 @@
                 </div>
                 <div>
                     <h4 class="text-xs uppercase tracking-widest font-bold mb-6">Ubicación</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 font-light leading-relaxed">
-                        Llano de Brujas, Murcia,<br />España
-                    </p>
+                    <address
+                        class="text-sm text-gray-600 dark:text-gray-400 font-light leading-relaxed not-italic mb-6">
+                        C. San Pedro, 10, Bajo,<br />30161 Llano de Brujas, Murcia,<br />España
+                    </address>
+                    <div
+                        class="w-full h-40 rounded-sm overflow-hidden border border-gray-100 dark:border-gray-800 relative group">
+                        <iframe
+                            src="https://www.google.com/maps?q=C.+San+Pedro,+10,+30161+Llano+de+Brujas,+Murcia&t=m&z=17&output=embed&iwloc=near"
+                            class="w-full h-full border-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div
+                            class="absolute inset-0 bg-primary/5 dark:bg-black/20 pointer-events-none transition-colors duration-500 group-hover:bg-transparent">
+                        </div>
+                    </div>
                 </div>
                 <div class="lg:col-span-2">
                     <h4 class="text-xs uppercase tracking-widest font-bold mb-6">Legal</h4>
@@ -235,7 +390,8 @@
                 </div>
             </div>
             <div class="border-b border-gray-100 dark:border-gray-800 mb-12">
-                <h2 class="text-[12vw] font-medium leading-none tracking-tighter text-primary dark:text-white mb-8">
+                <h2 class="text-[12vw] font-medium leading-none tracking-tighter text-primary dark:text-white mb-8"
+                    data-aos="fade-up">
                     Bordados López
                 </h2>
             </div>
@@ -248,7 +404,57 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34630975350" target="_blank"
+        class="fixed bottom-4 right-4 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-xl hover:shadow-[#25D366]/30 transition-all duration-300 flex items-center justify-center group"
+        aria-label="Contactar por WhatsApp">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Init AOS
+        AOS.init({
+            duration: 800,
+            once: false,
+            offset: 50,
+        });
+
+        // Mobile Menu Liquid Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.style.clipPath = 'circle(150% at calc(100% - 2.5rem) 2.5rem)';
+                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+                menuIcon.textContent = 'close';
+                menuIcon.classList.add('rotate-180');
+                document.body.style.overflow = 'hidden'; // Lock scroll
+            } else {
+                mobileMenu.style.clipPath = 'circle(0% at calc(100% - 2.5rem) 2.5rem)';
+                mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                menuIcon.textContent = 'menu';
+                menuIcon.classList.remove('rotate-180');
+                document.body.style.overflow = ''; // Restore scroll
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', () => {
+            if (isMenuOpen) toggleMenu();
+        }));
+
         // Simple scroll spy or active link indicator if needed
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
